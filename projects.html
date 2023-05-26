@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Erin Davis - Full Stack Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <method="post">
+    <meta name="description" content="Portfolio Website to showcase Erin's skills in HTML, CSS, SCSS, Javascript, C Language, and more. Erin is an aspiring Full Stack Engineer.">
+    <meta name="keywords" content="Erin Davis, HTML, CSS, JavaScript, Software Development, Developer, C, Coding, Code, Program, Programing">
+    <meta name="author" content="Erin Davis">
+</head>
+<body>
+    <main class="fprojects">
+        
+<!--NAV BAR-->
+
+<nav class="navbar navbar-expand-md fixed-top”>
+    <a class="navbar-brand" href="index.html">
+        <img src="images/favicon-32x32.png" alt="Erin Davis Portfolio" class="icon">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav mr-auto nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link button__text" aria-current="page" href="about-me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button__text" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button__text" aria-current="page" href="work.html">Work Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link button__text" aria-current="page" href="education.html">Education</a>
+            </li>                            
+        </ul>
+        </div>
+</div>
+</nav>
+        </header>
+
+        <div class="content-wrap">
+            <h1>Featured Projects</h1>
+            <h2 class="heading-projects">by Erin Davis</h2>
+            <p class="description">Check back often as I will continue to update this page with recent projects I have completed in my journey to become a Full Stack Engineer.</p>
+            <section class="projects" id="projects">
+                <div class="content-wrap">
+                <p>In this section, I will showcase what I have learned through my programming classes. This will include excersizes completed through the Software Development training sessions with <a href="https://www.correlation-one.com" target="_blank">Correlation One</a> and the coding languages I have learned through Harvard's <a href="https://cs50.harvard.edu" target="_blank">CS50 Introduction to Computer Science</a> course. Don't forget to consider this site one of the Featured Projects, as well!</p>
+                <section class="project-item">
+                    <iframe src="https://scratch.mit.edu/projects/835990844/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <h4>Scratch</h4>
+                    <p>Part of CS50's first project was to create a program using MIT's Scratch website. This site provides a wonderful introduction into the syntax and formatting of code in easy to use puzzle pieces that allow a new programmer to familiarize themselves with concepts such as elements, loops, and conditions (just to name a few) in an engaging way that does not feel overwhelming. My first project was a short game inspired by the Harry Potter Universe called <a href="https://scratch.mit.edu/projects/835990844" target="_blank">Welcome to Hogwarts</a>.</p>
+                </section>
+                <section class="project-item">
+                    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="Open and closing brackets for CSS">
+                    <h4>HTML, CSS, SCSS, and Bootstrap</h4>
+                    <p>As a project for the Software Developer training with Correlation One, I have built this portfolio website! I have used my knowledge of HTML, CSS, SCSS and Bootstrap to design an aesthetically pleasing page to showcase my abilities.</p>
+                </section>
+                <section class="project-item">
+                    <img src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Stock image of C coding language" height=250px>
+                    <h4>C Language</h4>
+                    <p>After designing the Hogwarts game in Scratch, I dove into the C language through CS50. While I have not used the language to create an independent project yet, I am gaining more and more experiencing writing and reading this code through exercises, labs, and problem sets assigned in class.</p>
+                </section>
+                </div>
+            </section>
+        <!--CONTACT-->
+    
+        <section class="contact" id="contact">
+            <div>
+                <h2 class="heading-projects">Let's keep in touch!</h2>
+                <p>Subscribe to my newsletter</p>
+                <form>
+                    <div class="row g-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="form-control" placeholder="name@example.com" aria-label="Email">
+                    </div>
+                        <input class="pbtn btn" and style="background-color:transparent"  type="submit" value="Submit!">
+                    </div>
+                </form>
+            </div>
+      </section>
+      
+   <!--FOOTER-->
+      
+      <footer class="fcontent-wrap footer">  
+        <section class="footer" id="footer">
+            <div class="container heading-contact">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="contact-list">
+                            <li class="button"><a href = "mailto: erindavis928@gmail.com">Email Me</a></li>
+                            <li class="button"><a href = "https://www.linkedin.com/in/edavis928" target="_blank">LinkedIn</a></li>
+                        </ul>
+            </div>
+        </footer>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
+
+        

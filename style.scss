@@ -1,0 +1,472 @@
+//VARIABLES
+$almost-black: #353535;
+$teal: #3C6E71;
+$almost-white: #F7FFF7;
+$light-gray: #D9D9D9;
+$navy: #284B63;
+$orange: #CA6702;
+$yellow: #EE9B00;
+
+/* Global Styles -----------------------*/
+html{
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    color: $almost-black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+
+  h1 {
+    font-size: 100px;
+  }
+  
+  h2 {
+    font-size: 35px;
+    color: $orange;
+   }
+
+    h3 {
+    font-size: 30px;
+  }
+  
+  h4, h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 400;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .heading-contact {
+    padding-top: 60px;
+  }
+
+  .content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  .btn-outline-secondary {
+    font-family: 'Shadows Into Light', cursive;
+    color: $almost-white;
+  }
+
+  .card-img-top {
+    width: 50vw;
+    height: 30vw;
+    object-fit: cover;
+    align-content: center;
+}
+
+
+/* Nav Bar -----------------------*/
+
+  .navbar {
+    background: $navy;
+    a {
+        color: $almost-white;
+    }
+    a:hover {
+        color: $orange;
+        font-family: 'Rubik', sans-serif;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        }
+    }
+    .button1 {
+        color: $orange;
+    }
+
+    .nav-item {
+    transition: all .3s ease;
+    }
+
+    .nav-item:hover {
+    letter-spacing: 4px;
+    }
+
+    .nav-item::before, 
+    nav-item:hover .nav-item::before {
+        width: 8px;
+    }
+
+    .nav-item:hover::after,
+    .nav-item:hover .nav-item::after{
+    width: calc(100% - 56px * 2 - 16px);
+}
+
+  .navbar-brand {
+    padding-left: 30px;
+  }
+
+  .nav {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $navy;
+    font-size: 9pt;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 0;
+}
+ 
+/*Header----------------------*/
+
+header {
+    background: $navy;
+    color: $almost-white;
+    text-align: center;
+    margin: 0;
+    padding-top: 0;
+  }
+
+.description {
+    padding: 10px 0;
+  }
+  
+ .pic {
+    width: 300px;
+    border-radius: 50%;
+ } 
+
+ /*About --------------------*/
+ .about{
+    background: $almost-white;
+    text-align: center;
+  }
+
+  .about-text {
+    color: $almost-black;
+    padding: 10px 0;
+ } 
+
+ .about-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: $navy;
+}
+
+.fcontent-wrap {
+    .wcontent-wrap > h1 {
+        padding-top: 50px;
+    }
+    background-color: $navy;
+  }
+
+.button, .button1, .btn, .pbtn{
+    position: relative;
+    z-index: 0;
+    width: 240px;
+    height: 56px;
+    text-decoration: none;
+    font-size: 14px; 
+    font-weight: bold;
+    color: $navy;
+    letter-spacing: 2px;
+    transition: all .3s ease;
+    font-family: 'Shadows Into Light', cursive;
+}
+.button__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button:hover, .button1:hover, .btn:hover, .pbtn:hover {
+    letter-spacing: 6px;
+}
+
+.button:hover::before, .button1:hover::before, .btn:hover::before, .pbtn:hover::before,
+.button:hover .button1:hover .button__text::before {
+    width: 8px;
+}
+
+.button:hover::after, .button1:hover::after, .btn:hover::after, .pbtn:hover::after,
+.button:hover .button1:hover .button__text::after{
+    width: calc(100% - 56px * 2 - 16px);
+}
+
+ /*Projects------------------*/
+ .fprojects, .projects-card {
+    background-image: url(https://images.unsplash.com/photo-1643730615260-22b97ec564b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    background-color: $navy;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $almost-white;
+    text-align: center;
+    }
+
+ 
+ .projects {
+    color: $almost-white;
+    text-align: center;
+    margin: 20px auto;
+    a {
+        text-decoration: none;
+        color: $almost-black;
+    }
+    a:hover {
+        text-decoration: underline;
+            }
+  }
+
+  .heading-projects {
+    color:$almost-black;
+  }
+
+  .project-body {
+    a {
+    text-decoration: none;
+    color: $yellow;
+    }
+    a:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+}
+
+  .projects-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: $yellow;
+}
+
+ .projects-text {
+    padding: 10px 0;
+ }
+
+  .project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed $yellow;
+    padding: 25px 0;
+  }
+  
+  .project-item:last-of-type {
+    border-bottom: none;
+  }
+    
+  .project-item img {
+    margin: 35px 0;
+    max-width: 325px;
+    max-height: 325px;
+  }
+  
+  .project-item iframe {
+    margin: 35px 0;
+    max-width: 325px;
+    max-height: 325px;
+  }
+  
+  .project-item h4{
+    margin-top: 0;
+  }
+
+  /*Work-----------------------------*/
+
+  .work, .workexp {
+    background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80);
+    background-color: $almost-white;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    color: black;
+    text-align: center;
+}
+
+.wcard-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: $navy;
+}
+
+.wcard-text 
+.work p, .job-details p {
+  width: 60%;
+}
+
+.work a, .workexp a{
+  color: $navy;
+  text-decoration: none;
+}
+
+.wcontent-wrap > h1 {
+    padding-top: 50px;
+}
+
+.job-item {
+  overflow: hidden;
+  border-bottom: 1px dashed $teal;
+  padding: 25px;
+  background: rgba(247, 255, 247, .18);
+  color: black;
+  }
+
+.job-item:last-of-type {
+  border-bottom: none;
+}
+
+.job-details {
+  text-align: left;
+}
+
+
+/*Education----------------------*/
+
+.econtent-wrap, .edu {
+    background: $almost-white;
+    color: $almost-black
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+
+.education {
+    background: $almost-white;
+    color: $orange;
+}
+
+.econtent-wrap > h1 {
+    padding: 50px auto;
+}
+
+.econtent-wrap > h2 {
+    padding-top: 0;
+}
+
+.edu-item {
+    padding-bottom: 40px;
+}
+
+.edu-item a {
+    text-decoration: none;
+    color: $teal;
+}
+
+.edu-item a:hover {
+    text-decoration: underline;
+}
+
+/*Licenses--------------------*/
+
+
+.licenses {
+    background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 100px;
+    color: black;
+}
+
+.licenses ul {
+    margin-top: 45px;
+    background: rgba(247, 255, 247, .18);
+    color: black;
+    list-style-type: none;
+}
+
+.licenses a {
+    color: $navy;
+    text-decoration: none;
+}
+
+.licenses a:hover {
+    text-decoration: underline;
+}
+
+.lic {
+    padding: 5px;
+}
+
+/* Contact -----------------------*/
+.contact{
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  h2 + p {
+    display: inline-block;
+  }
+  
+  input{
+    margin: 10px;
+  }
+  
+  /* Footer -----------------------*/
+    .footer {
+    background: $navy;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: $orange;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .btn {
+    color: $orange;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    }
+
+    .pbtn{
+    color: $almost-black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    }
+
+  .btn:hover, .footer a:hover, .pbtn:hover {
+    color: $yellow,
+  }
+  
+   .contact-list {
+    list-style-type: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-list a {
+    padding: 15px;
+    display: inline-blocks;
+  }
+
+  /* Responsive -----------------------*/
+
+  @media(prefers-reduced-motion) {
+    .footer a:hover {
+      transition: none;
+    }
+    .nav a:hover {
+      transition: none;
+    }
+  }
+  
+  
